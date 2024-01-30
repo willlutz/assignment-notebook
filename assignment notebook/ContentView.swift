@@ -18,10 +18,10 @@ struct ContentView: View {
 
         
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ForEach(assignments) { AssignmentItem in
+            Text (AssignmentItem.description)
+            }
+ 
         }
         .padding()
     }
